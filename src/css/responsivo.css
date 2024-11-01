@@ -1,0 +1,57 @@
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  margin: 0 15px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+}
+
+/* Estilo do menu hamburguer */
+.menu-toggle {
+  display: none; /* Esconder por padrão */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: #333;
+  margin: 4px 0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .nav-menu {
+      display: none; /* Esconder o menu por padrão em telas pequenas */
+      flex-direction: column;
+      width: 100%;
+      background-color: #fff; /* Altere a cor conforme necessário */
+      position: absolute;
+      top: 60px; /* Altere conforme a altura do header */
+      left: 0;
+      z-index: 1000;
+  }
+
+  .nav-menu.active {
+      display: flex; /* Mostrar menu quando ativo */
+  }
+
+  .menu-toggle {
+      display: flex; /* Mostrar o botão do menu em telas pequenas */
+  }
+}

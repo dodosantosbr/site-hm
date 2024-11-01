@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Millenium</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/responsivo.css"> <!-- Corrigido para fechar a tag -->
+    <link rel="icon" href="src/imagens/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="src/imagens/logo.png" alt="Logo do Site" />
+        </div>
+        <nav>
+            <div class="menu-toggle" id="menuToggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#noticias">Notícias</a></li>
+                <li><a href="#suporte">Suporte</a></li>
+                <li><a href="#pagamento">Pagamento via PIX</a></li>
+                <li><a href="#tutoriais">Tutoriais</a></li>
+                <li><a href="#download">Download do Jogo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="noticias">
+            <h2>Notícias</h2>
+            <div class="noticias-container">
+                <div class="noticia">
+                    <h3>👻 Evento Halloween 🎃</h3>
+                    <p>Evento de halloween está acontecendo do dia 26 de outubro ate o dia 18 de novembro.</p>
+                </div>
+                <div class="noticia">
+                    <h3>🎄 Evento Natalino 🎅</h3>
+                    <p>Evento de natal ficará disponível do dia 28 de novembro ate o dia 27 de dezembro.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="suporte">
+            <h2>Suporte</h2>
+            <p>Entre em contato para suporte através do nosso formulário:</p>
+            <a href="https://docs.google.com/forms/d/1VUQ2Zm7oMYaVjW4fTT5mDx2XNI9RUeBfhewUrGHEyeM/prefill" target="_blank">
+                <button class="btn-suporte">Abrir Formulário de Suporte</button>
+            </a>
+        </section>
+
+        <section id="pagamento">
+            <h2>Pagamento via PIX</h2>
+            <p>Realize seu pagamento utilizando o código PIX abaixo:</p>
+
+            <button id="gerarCodigo" class="btn-gerar-codigo">Gerar Código PIX</button>
+            <textarea id="codigoPix" rows="4" cols="50" readonly></textarea>
+
+            <form id="uploadForm">
+                <label for="imageUpload" class="btn-upload">Adicionar Comprovante</label>
+                <input type="file" id="imageUpload" name="image" accept="image/*" style="display:none">
+            </form>
+
+            <a id="whatsappButton" target="_blank" class="btn-enviar-imagem">Enviar via WhatsApp</a>
+        </section>
+
+        <section id="tutoriais">
+            <h2>Tutoriais</h2>
+            <p>Aqui estão alguns tutoriais úteis.</p>
+
+            <div class="tutorial-card">
+                <img src="src/imagens/img1.png" alt="Imagem do Tutorial 1">
+                <h3>Guia para iniciantes</h3>
+                <p>Tutorial para iniciantes no Hero.</p>
+                <a href="tutorial1.html" class="btn-tutorial">Ver Tutorial</a>
+            </div>
+
+            <div class="tutorial-card">
+                <img src="src/imagens/img13.jpg" alt="Tutorial 2" class="imagem-tutorial">
+                <h3>Armadura Espiritual Eterna</h3>
+                <p>Temos o prazer de apresentar as informações detalhadas sobre a Armadura Espiritual Eterna e o Item Único!</p>
+                <a href="tutorial2.html" class="btn-tutorial">Ver Tutorial</a>
+            </div>
+
+            <div class="tutorial-card">
+                <img src="src/imagens/img17.jpg" alt="Tutorial 3">
+                <h3>Tutorial 3</h3>
+                <p>Temos o prazer de apresentar as informações detalhadas sobre a Armadura do Terremoto do Dragão Negro!</p>
+                <a href="tutorial3.html" class="btn-tutorial">Ver Tutorial</a>
+            </div>
+        </section>
+
+        <section id="download">
+            <h2>Download do Jogo</h2>
+            <p>Baixe o jogo clicando no botão abaixo:</p>
+            <a href="src/jogos/hero_millenium.zip" download class="btn-download">Baixar Jogo</a>
+            <p>Junte-se ao nosso servidor no Discord:</p>
+            <a href="https://discord.gg/fgwACvX3Pt" target="_blank" class="btn-discord">Entrar no Discord</a>
+        </section>
+    </main>
+
+    
+    <script src="src/js/index.js"></script>
+
+    <footer>
+        <p>&copy; 2024 Hero Millenium. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
