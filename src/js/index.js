@@ -1,10 +1,17 @@
-// Quando o documento é carregado, ativa o menu responsivo
+// Quando o documento é carregado, ativa o menu responsivo e o controle de clique fora
 document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.getElementById("menuToggle");
   const navMenu = document.getElementById("navMenu");
 
-  menuToggle.addEventListener("click", function () {
+  menuToggle.addEventListener("click", function (event) {
     navMenu.classList.toggle("active");
+    event.stopPropagation();
+  });
+
+  document.addEventListener("click", function (event) {
+    if (navMenu.classList.contains("active") && !navMenu.contains(event.target) && event.target !== menuToggle) {
+      navMenu.classList.remove("active");
+    }
   });
 });
 
