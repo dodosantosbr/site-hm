@@ -8,26 +8,20 @@ header {
     display: flex;
     align-items: center;
     background-color: white;
-    /* Cor de fundo do cabeçalho para branco */
     color: #da2c38;
-    /* Cor do texto para azul */
     padding: 10px 20px;
     border-bottom: 1px solid #ccc;
-    /* Adiciona uma borda na parte inferior */
 }
 
 .logo img {
     height: 150px;
-    /* Aumente a altura do logo para 80px */
     margin-right: 15px;
-    /* Espaço entre o logo e o título */
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     margin-left: auto;
-    /* Alinha o menu à direita */
 }
 
 nav ul li {
@@ -37,13 +31,11 @@ nav ul li {
 
 nav a {
     color: #da2c38;
-    /* Cor do texto dos links do menu */
     text-decoration: none;
 }
 
 nav a:hover {
     text-decoration: underline;
-    /* Adiciona sublinhado ao passar o mouse */
 }
 
 main {
@@ -58,140 +50,93 @@ section {
 
 .btn-suporte {
     background-color: #0ead69;
-    /* Cor de fundo do botão */
     color: white;
-    /* Cor do texto do botão */
     border: none;
-    /* Remove bordas */
     border-radius: 5px;
-    /* Arredonda os cantos */
     padding: 10px 20px;
-    /* Espaçamento interno */
     font-size: 16px;
-    /* Tamanho da fonte */
     cursor: pointer;
-    /* Muda o cursor ao passar o mouse */
     text-decoration: none;
-    /* Remove o sublinhado */
     display: inline-block;
-    /* Permite margens e padding */
 }
 
 .btn-suporte:hover {
     background-color: #16db65;
-    /* Cor ao passar o mouse */
 }
 
 footer {
     text-align: center;
     padding: 10px 0;
     background-color: #da2c38;
-    /* Cor de fundo do rodapé */
     color: white;
-    /* Cor do texto do rodapé */
     position: relative;
     bottom: 0;
     width: 100%;
 }
 
-/* Estilos do menu de navegação */
 nav {
     margin-left: auto;
-    /* Alinha o menu à direita */
 }
 
 .nav-menu {
     list-style: none;
     display: flex;
-    /* Exibe os itens em linha */
     padding: 0;
-    /* Remove o padding padrão */
     margin: 0;
-    /* Remove a margem padrão */
 }
 
 .nav-menu li {
     position: relative;
-    /* Para que possamos usar pseudo-elementos */
     margin: 0 15px;
-    /* Espaço entre os itens do menu */
 }
 
 .nav-menu a {
     text-decoration: none;
-    /* Remove o sublinhado */
     color: #d00000;
-    /* Cor do texto */
     padding: 10px 15px;
-    /* Espaçamento interno */
     border: 2px solid transparent;
-    /* Borda inicial invisível */
     border-radius: 5px;
-    /* Cantos arredondados */
     transition: all 0.3s ease;
-    /* Animação suave para as transições */
 }
 
-/* Efeito de hover */
 .nav-menu a:hover {
     border-color: #d00000;
-    /* Borda azul ao passar o mouse */
     background-color: rgba(122, 5, 1, 0.1);
-    /* Fundo levemente azul */
     color: #d00000;
-    /* Muda a cor do texto ao passar o mouse */
 }
 
-/* Efeito de animação na borda inferior */
 .nav-menu a::after {
     content: '';
     position: absolute;
     width: 0;
-    /* Inicia sem largura */
     height: 2px;
-    /* Espessura da linha */
     background: #d00000;
-    /* Cor da linha */
     bottom: 0;
-    /* Posiciona na parte inferior */
     left: 50%;
-    /* Centraliza a linha */
     transition: width 0.3s ease, left 0.3s ease;
-    /* Animação suave para a linha */
 }
 
-/* Expande a linha ao passar o mouse */
 .nav-menu a:hover::after {
     width: 100%;
-    /* Expande a largura para 100% */
     left: 0;
-    /* Move para a esquerda */
 }
 
 #tutoriais {
     display: flex;
     flex-wrap: wrap;
-    /* Permite que os cartões vão para a próxima linha em telas menores */
     gap: 20px;
-    /* Espaçamento entre os cartões */
 }
 
 .tutorial-card {
     flex: 1 1 300px;
-    /* Define uma largura flexível mínima de 300px */
     max-width: 300px;
-    /* Limita a largura máxima */
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #f9f9f9;
-    /* Cor de fundo dos cartões */
     border: 1px solid #ccc;
-    /* Borda cinza */
     border-radius: 10px;
-    /* Cantos arredondados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Sombra para profundidade */
     padding: 15px;
     margin: 10px;
     text-align: center;
@@ -216,13 +161,9 @@ nav {
 
 .imagem-tutorial {
     width: 300px;
-    /* Defina a largura desejada */
     height: auto;
-    /* Mantém a proporção da imagem */
     max-width: 100%;
-    /* Garante que a imagem não exceda a largura do contêiner */
 }
-
 
 .btn-tutorial {
     background-color: #0ead69;
@@ -234,79 +175,79 @@ nav {
     transition: background-color 0.3s;
     cursor: pointer;
     margin-top: auto;
-    /* Alinha o botão no final do cartão */
 }
 
 .btn-tutorial:hover {
     background-color: #0c8d59;
 }
 
-
 .btn-gerar-codigo,
 .btn-upload,
-.btn-enviar-imagem {
+.btn-enviar-imagem,
+.btn-suporte {
     background-color: #0ead69;
     color: white;
-    padding: 10px 15px;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin: 10px 5px 0 0;
     transition: background-color 0.3s;
     text-decoration: none;
+    font-size: 16px;
 }
 
 .btn-gerar-codigo:hover,
 .btn-upload:hover,
-.btn-enviar-imagem:hover {
-    background-color: #0ead69;
+.btn-enviar-imagem:hover,
+.btn-suporte:hover {
+    background-color: #0c8d59;
 }
 
-/* Estilo para o container de download */
 .download-container {
-    background-color: #f9f9f9; /* Cor de fundo clara */
-    border: 1px solid #ddd; /* Borda sutil */
-    border-radius: 8px; /* Bordas arredondadas */
-    padding: 20px; /* Espaçamento interno */
-    margin: 20px 0; /* Margem superior e inferior */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    text-align: center; /* Centraliza o texto */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .download-container h2 {
-    font-size: 1.8em; /* Tamanho do título */
-    color: #333; /* Cor do título */
-    margin-bottom: 10px; /* Espaçamento abaixo do título */
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 .download-container p {
-    font-size: 1.1em; /* Tamanho do texto */
-    color: #666; /* Cor do texto */
-    margin-bottom: 20px; /* Espaçamento abaixo do texto */
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 20px;
 }
 
 .btn-download {
-    display: inline-flex; /* Flex para alinhar ícone e texto */
-    align-items: center; /* Alinhamento vertical */
-    background-color: #0ead69; /* Cor do botão */
-    color: white; /* Cor do texto do botão */
-    padding: 10px 20px; /* Espaçamento interno do botão */
-    border: none; /* Sem borda */
-    border-radius: 5px; /* Bordas arredondadas */
-    text-decoration: none; /* Remove sublinhado */
-    font-size: 1.2em; /* Tamanho do texto do botão */
-    transition: background-color 0.3s, transform 0.3s; /* Efeito de transição */
+    display: inline-flex;
+    align-items: center;
+    background-color: #0ead69;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .btn-download:hover {
-    background-color: #16db65; /* Cor do botão ao passar o mouse */
-    transform: scale(1.05); /* Efeito de zoom */
+    background-color: #16db65;
+    transform: scale(1.05);
 }
 
 .download-icon {
-    width: 24px; /* Largura do ícone */
-    height: 24px; /* Altura do ícone */
-    margin-right: 10px; /* Espaçamento entre ícone e texto */
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
 }
 
 .btn-discord {
@@ -314,8 +255,7 @@ nav {
     padding: 10px 20px;
     margin-top: 10px;
     color: #ffffff;
-    background-color: #7289da; /* Cor padrão do Discord */
-    border: none;
+    background-color: #7289da;
     border-radius: 5px;
     text-decoration: none;
     font-size: 16px;
@@ -323,10 +263,8 @@ nav {
 }
 
 .btn-discord:hover {
-    background-color: #5b6eae; /* Cor mais escura ao passar o mouse */
+    background-color: #5b6eae;
 }
-
-
 
 textarea {
     width: 100%;
@@ -344,45 +282,32 @@ textarea {
 #noticias {
     padding: 20px;
     background-color: #f9f9f9;
-    /* Cor de fundo para o contraste */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Sombra para um efeito de profundidade */
 }
 
 .noticias-container {
     max-height: 300px;
-    /* Altura máxima do contêiner */
     overflow-y: auto;
-    /* Rolagem apenas na vertical */
     padding-right: 10px;
-    /* Espaço para a barra de rolagem */
     scrollbar-width: thin;
-    /* Barra de rolagem fina */
     scrollbar-color: #0ead69 #f1f1f1;
-    /* Cores da barra de rolagem */
 }
 
 .noticia {
     padding: 15px;
     border: 1px solid #0ead69;
-    /* Borda de destaque */
     border-radius: 5px;
     margin-bottom: 15px;
-    /* Espaço entre as notícias */
     background-color: #fff;
     transition: transform 0.3s;
-    /* Animação suave para hover */
 }
 
 .noticia:hover {
     transform: scale(1.02);
-    /* Aumenta levemente a notícia ao passar o mouse */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    /* Sombra mais intensa ao passar o mouse */
 }
 
-/* Estilização opcional para a barra de rolagem no Chrome */
 .noticias-container::-webkit-scrollbar {
     width: 8px;
 }
@@ -390,4 +315,86 @@ textarea {
 .noticias-container::-webkit-scrollbar-thumb {
     background-color: #0ead69;
     border-radius: 4px;
+}
+
+.evento-gif {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#carrossel {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 80%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.carousel-inner img {
+    height: auto;
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+    cursor: pointer;
+}
+
+.carousel-inner img.main-image {
+    width: 50%;
+    height: auto;
+    transform: scale(1.1);
+}
+
+.carousel-inner img.thumbnail {
+    width: 10%;
+    height: auto;
+    margin: 0 5px;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-inner img.thumbnail:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
 }

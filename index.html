@@ -7,7 +7,7 @@
     <title>Hero Millenium</title>
     <link rel="stylesheet" href="src/css/styles.css">
     <link rel="stylesheet" href="src/css/reset.css">
-    <link rel="stylesheet" href="src/css/responsivo.css"> <!-- Corrigido para fechar a tag -->
+    <link rel="stylesheet" href="src/css/responsivo.css">
     <link rel="icon" href="src/imagens/favicon.ico" type="image/x-icon">
 </head>
 
@@ -27,6 +27,7 @@
                 <li><a href="#suporte">Suporte</a></li>
                 <li><a href="#pagamento">Pagamento via PIX</a></li>
                 <li><a href="#tutoriais">Tutoriais</a></li>
+                <li><a href="#carrossel">Galeria</a></li>
                 <li><a href="#download">Download do Jogo</a></li>
             </ul>
         </nav>
@@ -37,11 +38,12 @@
             <h2>Notícias</h2>
             <div class="noticias-container">
                 <div class="noticia">
-                    <h3>👻 Evento Halloween 🎃</h3>
+                    <h3><img src="src/imagens/newevent.gif" alt="New GIF" class="evento-gif" /> 👻 Evento
+                        Halloween 🎃</h3>
                     <p>Evento de halloween está acontecendo do dia 26 de outubro ate o dia 18 de novembro.</p>
                 </div>
                 <div class="noticia">
-                    <h3>🎄 Evento Natalino 🎅</h3>
+                    <h3><img src="src/imagens/newevent.gif" alt="New GIF" class="evento-gif" />🎄 Evento Natalino 🎅</h3>
                     <p>Evento de natal ficará disponível do dia 28 de novembro ate o dia 27 de dezembro.</p>
                 </div>
             </div>
@@ -50,7 +52,8 @@
         <section id="suporte">
             <h2>Suporte</h2>
             <p>Entre em contato para suporte através do nosso formulário:</p>
-            <a href="https://docs.google.com/forms/d/1VUQ2Zm7oMYaVjW4fTT5mDx2XNI9RUeBfhewUrGHEyeM/prefill" target="_blank">
+            <a href="https://docs.google.com/forms/d/1VUQ2Zm7oMYaVjW4fTT5mDx2XNI9RUeBfhewUrGHEyeM/prefill"
+                target="_blank">
                 <button class="btn-suporte">Abrir Formulário de Suporte</button>
             </a>
         </section>
@@ -82,15 +85,17 @@
 
             <div class="tutorial-card">
                 <img src="src/imagens/img13.jpg" alt="Tutorial 2" class="imagem-tutorial">
-                <h3>Guia Armadura Espiritual Eterna</h3>
-                <p>Temos o prazer de apresentar as informações detalhadas sobre a Armadura Espiritual Eterna e o Item Único!</p>
+                <h3>Armadura Espiritual Eterna</h3>
+                <p>Temos o prazer de apresentar as informações detalhadas sobre a Armadura Espiritual Eterna e o Item
+                    Único!</p>
                 <a href="tutorial2.html" class="btn-tutorial">Ver Tutorial</a>
             </div>
 
             <div class="tutorial-card">
                 <img src="src/imagens/img17.jpg" alt="Tutorial 3">
-                <h3>Guia Armadura Dragão Negro</h3>
-                <p>Temos o prazer de apresentar as informações detalhadas sobre a Armadura do Terremoto do Dragão Negro!</p>
+                <h3>Tutorial 3</h3>
+                <p>Temos o prazer de apresentar as informações detalhadas sobre a Armadura do Terremoto do Dragão Negro!
+                </p>
                 <a href="tutorial3.html" class="btn-tutorial">Ver Tutorial</a>
             </div>
         </section>
@@ -102,9 +107,34 @@
             <p>Junte-se ao nosso servidor no Discord:</p>
             <a href="https://discord.gg/fgwACvX3Pt" target="_blank" class="btn-discord">Entrar no Discord</a>
         </section>
+
+        <section id="carrossel">
+            <h2>Galeria de Imagens</h2>
+            <div class="carousel">
+                <button class="carousel-button prev">&#10094;</button>
+                <div class="carousel-inner">
+                    <img src="src/imagens/print1.png" alt="Imagem 1">
+                    <img src="src/imagens/print2.png" alt="Imagem 2">
+                    <img src="src/imagens/print3.jpg" alt="Imagem 3">
+                    <img src="src/imagens/print4.jpg" alt="Imagem 4">
+                    <img src="src/imagens/print5.jpg" alt="Imagem 5">
+                    <img src="src/imagens/print6.jpg" alt="Imagem 6">
+                    <img src="src/imagens/print7.jpg" alt="Imagem 7">
+                    <img src="src/imagens/print8.jpg" alt="Imagem 8">
+                    <img src="src/imagens/print9.jpg" alt="Imagem 9">
+                    <img src="src/imagens/print10.png" alt="Imagem 10">
+                    <img src="src/imagens/print11.png" alt="Imagem 11">
+                    <img src="src/imagens/print12.png" alt="Imagem 12">
+                    <img src="src/imagens/print13.png" alt="Imagem 13">
+                    <img src="src/imagens/print14.jpg" alt="Imagem 14">
+                    <img src="src/imagens/print15.png" alt="Imagem 15">
+                </div>
+                <button class="carousel-button next">&#10095;</button>
+            </div>
+        </section>
     </main>
 
-    
+
     <script src="src/js/index.js"></script>
 
     <footer>

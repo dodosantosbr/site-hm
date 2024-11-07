@@ -32,48 +32,43 @@ header {
     margin: 0;
 }
 
-/* Estilos para o botão "Voltar para Home" */
 .btn-voltar-home {
     display: inline-block;
     padding: 12px 25px;
-    background-color: #0ead69; /* Cor de fundo principal */
-    color: white; /* Cor do texto */
-    font-size: 16px; /* Tamanho da fonte */
+    background-color: #0ead69;
+    color: white;
+    font-size: 16px;
     font-weight: bold;
-    text-decoration: none; /* Remove o sublinhado */
-    border-radius: 30px; /* Borda arredondada */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
-    transition: transform 0.3s ease, background-color 0.3s ease; /* Transição suave */
-    position: relative; /* Para efeitos de pseudo-elemento */
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    position: relative;
 }
 
-/* Efeito de hover para o botão */
 .btn-voltar-home:hover {
-    background-color: #16db65; /* Cor de fundo ao passar o mouse */
-    transform: translateY(-3px); /* Eleva o botão levemente */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+    background-color: #16db65;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Pseudo-elemento para uma pequena seta decorativa */
+
 .btn-voltar-home::before {
-    content: "←"; /* Seta decorativa */
+    content: "←";
     margin-right: 10px;
     font-size: 1.2em;
     color: #fff;
     transition: transform 0.3s ease;
 }
 
-/* Animação extra na seta ao passar o mouse */
 .btn-voltar-home:hover::before {
-    transform: translateX(-5px); /* Move a seta para a esquerda */
+    transform: translateX(-5px);
 }
 
 .passo h3 {
-    font-size: 1.4em; /* Tamanho da fonte */
-    color: #d00000; /* Cor dos títulos */
-    margin-top: 15px; /* Espaço acima do título */
-    margin-bottom: 10px; /* Espaço abaixo do título */
-    font-weight: bold; /* Negrito para destaque */
+    font-size: 1.4em;
+    color: #d00000;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
-
-
