@@ -1,3 +1,13 @@
+// Quando o documento é carregado, ativa o menu responsivo
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.getElementById("menuToggle");
+  const navMenu = document.getElementById("navMenu");
+
+  menuToggle.addEventListener("click", function () {
+    navMenu.classList.toggle("active");
+  });
+});
+
 // Gerar código PIX
 document.getElementById('gerarCodigo').addEventListener('click', function () {
   const codigoPix = "00020126850014BR.GOV.BCB.PIX01361ccf5854-1abf-4586-a1a8-13a9b63378d00223Compre seu cash seguro.5204000053039865802BR5923Douglas de Sales Santos6009SAO PAULO61080540900062240520p2jONxnQrhAvmiU3ftc563045BF8";
@@ -14,12 +24,6 @@ document.getElementById('whatsappButton').addEventListener('click', function () 
   document.getElementById('whatsappButton').setAttribute('href', url);
 });
 
-// Menu Responsivo
-document.getElementById('menuToggle').addEventListener('click', function () {
-  const navMenu = document.getElementById('navMenu');
-  navMenu.classList.toggle('active');
-});
-
 // Funções do carrossel de imagens
 let currentIndex = 0;
 
@@ -30,41 +34,33 @@ const totalImages = images.length;
 const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
 
-// Função para atualizar o carrossel
 function updateCarousel() {
-    images.forEach((image, index) => {
-        image.classList.add('thumbnail');
-        image.classList.remove('main-image');
-    });
+  images.forEach((image, index) => {
+    image.classList.add('thumbnail');
+    image.classList.remove('main-image');
+  });
 
-    images[currentIndex].classList.add('main-image');
-    images[currentIndex].classList.remove('thumbnail');
+  images[currentIndex].classList.add('main-image');
+  images[currentIndex].classList.remove('thumbnail');
 
-
-    carouselInner.style.transform = `translateX(-${currentIndex * 10}%)`;
+  carouselInner.style.transform = `translateX(-${currentIndex * 10}%)`;
 }
 
-
 prevButton.addEventListener('click', () => {
-    currentIndex = (currentIndex === 0) ? totalImages - 1 : currentIndex - 1;
-    updateCarousel();
+  currentIndex = (currentIndex === 0) ? totalImages - 1 : currentIndex - 1;
+  updateCarousel();
 });
-
 
 nextButton.addEventListener('click', () => {
-    currentIndex = (currentIndex === totalImages - 1) ? 0 : currentIndex + 1;
-    updateCarousel();
+  currentIndex = (currentIndex === totalImages - 1) ? 0 : currentIndex + 1;
+  updateCarousel();
 });
-
 
 images.forEach((image, index) => {
-    image.addEventListener('click', () => {
-        currentIndex = index;
-        updateCarousel();
-    });
+  image.addEventListener('click', () => {
+    currentIndex = index;
+    updateCarousel();
+  });
 });
 
-
 updateCarousel();
-
-
