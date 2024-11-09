@@ -31,6 +31,15 @@ document.getElementById('whatsappButton').addEventListener('click', function () 
   document.getElementById('whatsappButton').setAttribute('href', url);
 });
 
+//função do modal
+function abrirModal() {
+  document.getElementById("modalImagem").style.display = "flex";
+}
+
+function fecharModal() {
+  document.getElementById("modalImagem").style.display = "none";
+}
+
 // Funções do carrossel de imagens
 let currentIndex = 0;
 
