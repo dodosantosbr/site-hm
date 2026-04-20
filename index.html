@@ -1,159 +1,267 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hero Millenium</title>
-    <link rel="stylesheet" href="src/css/styles.css">
-    <link rel="stylesheet" href="src/css/reset.css">
-    <link rel="stylesheet" href="src/css/responsivo.css">
-    <link rel="icon" href="src/imagens/favicon.ico" type="image/x-icon">
-</head>
+    <link rel="icon" href="src/imagens/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/responsivo.css" />
+  </head>
 
-<body>
+  <body>
+    <div id="efeito-letras"></div>
+
     <header>
-        <div class="logo">
-            <img src="src/imagens/logo.png" alt="Logo do Site" />
+      <div class="logo">
+        <img src="src/imagens/logohmcrystal.png" alt="Hero Millenium" />
+      </div>
+      <nav>
+        <div
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Abrir menu"
+          role="button"
+          tabindex="0"
+        >
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
         </div>
-        <nav>
-            <div class="menu-toggle" id="menuToggle">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#noticias">Notícias</a></li>
-                <li><a href="#suporte">Suporte</a></li>
-                <li><a href="#pagamento">Pagamento via PIX</a></li>
-                <li><a href="#tutoriais">Tutoriais</a></li>
-                <li><a href="#carrossel">Galeria</a></li>
-                <li><a href="#download">Download do Jogo</a></li>
-            </ul>
-        </nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#noticias">Notícias</a></li>
+          <li><a href="#suporte">Suporte</a></li>
+          <li><a href="#pagamento">Pagamento PIX</a></li>
+          <li><a href="#tutoriais">Tutoriais</a></li>
+          <li><a href="#carrossel">Galeria</a></li>
+          <li><a href="#download">Download</a></li>
+        </ul>
+      </nav>
     </header>
 
-
     <main>
-        <section id="noticias">
-            <h2>Notícias</h2>
-            <div class="noticias-container">
-                <div class="noticia">
-                    <h3><img src="src/imagens/newevent.gif" alt="New GIF" class="evento-gif" />🎄 Evento Natalino 🎅
-                    </h3>
-                    <p>Evento de natal ficará disponível do dia 19 de novembro ate o dia 26 de dezembro.</p>
-                </div>
-                <div class="noticia">
-                    <h3>
-                        <img src="src/imagens/newevent.gif" alt="Novo Evento" class="evento-gif">
-                        <a href="#" onclick="abrirModal()">💰 Cash Premiado Dezembro</a>
-                    </h3>
-                    <p>Participe do evento de Cash Premiado de dezembro e ganhe brindes exclusivos!</p>
-                </div>
-                
-                <div id="modalImagem" class="modal">
-                    <span class="fechar" onclick="fecharModal()">&times;</span>
-                    <img class="modal-conteudo" id="imagemModal" src="src/imagens/bnatal.png"
-                        alt="Imagem Cash Premiado Dezembro">
-                </div>                
-            </div>
-        </section>
+      <!-- NOTÍCIAS -->
+      <section id="noticias">
+        <h2>Notícias</h2>
+        <div class="noticias-container">
+          <div class="noticia">
+            <h3>
+              <img src="src/imagens/newevent.gif" alt="" class="evento-gif" />
+              🐉Nova Season
+            </h3>
+            <p>
+              Nova Season se aproxima se preparem.
+            </p>
+          </div>
+          <div class="noticia">
+            <h3>
+              <img src="src/imagens/newevent.gif" alt="" class="evento-gif" />
+              <a
+                href="#"
+                onclick="
+                  abrirModal();
+                  return false;
+                "
+                >💰 Cash Premiado</a
+              >
+            </h3>
+            <p>
+              Participe do evento de Cash Premiado de 2026 e ganhe brindes
+              exclusivos!
+            </p>
+          </div>
+        </div>
 
-        <section id="suporte">
-            <h2>Suporte</h2>
-            <p>Entre em contato para suporte através do nosso formulário:</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc8vh8f8-Z0UrQ2_yDtg88aR067waVgJmEnsy4ixIBTQxKxNQ/viewform?usp=pp_url"
-                target="_blank">
-                <button class="btn-suporte">Abrir Formulário de Suporte</button>
-            </a>
-        </section>
+        <div id="modalImagem" class="modal" onclick="fecharModal()">
+          <span class="fechar" onclick="fecharModal()">&times;</span>
+          <img
+            class="modal-conteudo"
+            id="imagemModal"
+            src="src/imagens/cashbanner.png"
+            alt="Imagem Cash Premiado"
+            onclick="event.stopPropagation()"
+          />
+        </div>
+      </section>
 
-        <section id="pagamento">
-            <h2>Pagamento via PIX</h2>
-            <p>Realize seu pagamento utilizando o código PIX abaixo:</p>
+      <!-- SUPORTE -->
+      <section id="suporte">
+        <h2>Suporte</h2>
+        <p>Entre em contato com nossa equipe pelo formulário oficial:</p>
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSc8vh8f8-Z0UrQ2_yDtg88aR067waVgJmEnsy4ixIBTQxKxNQ/viewform?usp=pp_url"
+          target="_blank"
+          rel="noopener"
+        >
+          <button class="btn-suporte">Abrir Formulário de Suporte</button>
+        </a>
+      </section>
 
-            <button id="gerarCodigo" class="btn-gerar-codigo">Gerar Código PIX</button>
-            <textarea id="codigoPix" rows="4" cols="50" readonly></textarea>
+      <!-- PIX -->
+      <section id="pagamento">
+        <h2>Pagamento via PIX</h2>
+        <p>Gere o código PIX, adicione seu comprovante e envie via WhatsApp:</p>
 
+        <div class="pix-wrapper">
+          <button id="gerarCodigo" class="btn-gerar-codigo">
+            Gerar Código PIX
+          </button>
+          <textarea
+            id="codigoPix"
+            rows="4"
+            readonly
+            placeholder="Clique em 'Gerar Código PIX' para gerar..."
+          ></textarea>
+
+          <div class="upload-row">
             <form id="uploadForm">
-                <label for="imageUpload" class="btn-upload">Adicionar Comprovante</label>
-                <input type="file" id="imageUpload" name="image" accept="image/*" style="display:none">
+              <label for="imageUpload" class="btn-upload"
+                >+ Adicionar Comprovante</label
+              >
+              <input
+                type="file"
+                id="imageUpload"
+                name="image"
+                accept="image/*"
+                style="display: none"
+              />
             </form>
+            <a
+              id="whatsappButton"
+              target="_blank"
+              rel="noopener"
+              class="btn-enviar-imagem"
+            >
+              &#10003; Enviar via WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
 
-            <a id="whatsappButton" target="_blank" class="btn-enviar-imagem">Enviar via WhatsApp</a>
-        </section>
-
-        <section id="tutoriais">
-            <h2>Tutoriais</h2>
-
-            <div class="tutorial-card">
-                <img src="src/imagens/img1.png" alt="Imagem do Tutorial 1">
-                <h3>Guia para iniciantes</h3>
-                <p>Tutorial para iniciantes no Hero.</p>
-                <a href="tutorial1.html" class="btn-tutorial">Ver Tutorial</a>
+      <!-- TUTORIAIS -->
+      <section id="tutoriais">
+        <h2>Tutoriais</h2>
+        <div class="tutoriais-grid">
+          <article class="tutorial-card">
+            <div class="thumb">
+              <img src="src/imagens/tutoini.png" alt="Guia para Iniciantes" />
             </div>
-
-            <div class="tutorial-card">
-                <img src="src/imagens/img13.jpg" alt="Tutorial 2" class="imagem-tutorial">
-                <h3>Armadura Espiritual Eterna</h3>
-                <p>Temos o prazer de apresentar as informações detalhadas sobre a Armadura Espiritual Eterna e o Item
-                    Único!</p>
-                <a href="tutorial2.html" class="btn-tutorial">Ver Tutorial</a>
+            <div class="card-body">
+              <h3>Guia para Iniciantes</h3>
+              <p>
+                Tudo que você precisa saber para começar sua jornada no Hero
+                Millenium.
+              </p>
+              <a href="tutorial1.html" class="btn-tutorial">Ver Tutorial</a>
             </div>
+          </article>
 
-            <div class="tutorial-card">
-                <img src="src/imagens/img17.jpg" alt="Tutorial 3">
-                <h3>Tutorial 3</h3>
-                <p>Temos o prazer de apresentar as informações detalhadas sobre a Armadura do Terremoto do Dragão Negro!
-                </p>
-                <a href="tutorial3.html" class="btn-tutorial">Ver Tutorial</a>
+          <article class="tutorial-card">
+            <div class="thumb">
+              <img
+                src="src/imagens/tutobd.png"
+                alt="Armadura Espiritual Eterna"
+              />
             </div>
-        </section>
-
-        <section id="download">
-            <h2>Download do Jogo</h2>
-            <p>Baixe o jogo clicando no botão abaixo:</p>
-            <a href="https://drive.google.com/file/d/1znajvTEF8Bzk3HzSj34XTwC2bK9OySTX/view?usp=sharing" download
-                class="btn-download">Baixar Jogo</a>
-            <p>Junte-se ao nosso servidor no Discord:</p>
-            <a href="https://discord.gg/fgwACvX3Pt" target="_blank" class="btn-discord">Entrar no Discord</a>
-        </section>
-
-        <section id="carrossel">
-            <h2>Galeria de Imagens</h2>
-            <div class="carousel">
-                <button class="carousel-button prev">&#10094;</button>
-                <div class="carousel-inner">
-                    <img src="src/imagens/print1.png" alt="Imagem 1">
-                    <img src="src/imagens/print2.png" alt="Imagem 2">
-                    <img src="src/imagens/print3.jpg" alt="Imagem 3">
-                    <img src="src/imagens/print4.jpg" alt="Imagem 4">
-                    <img src="src/imagens/print5.jpg" alt="Imagem 5">
-                    <img src="src/imagens/print6.jpg" alt="Imagem 6">
-                    <img src="src/imagens/print7.jpg" alt="Imagem 7">
-                    <img src="src/imagens/print8.jpg" alt="Imagem 8">
-                    <img src="src/imagens/print9.jpg" alt="Imagem 9">
-                    <img src="src/imagens/print10.png" alt="Imagem 10">
-                    <img src="src/imagens/print11.png" alt="Imagem 11">
-                    <img src="src/imagens/print12.png" alt="Imagem 12">
-                    <img src="src/imagens/print13.png" alt="Imagem 13">
-                    <img src="src/imagens/print14.jpg" alt="Imagem 14">
-                    <img src="src/imagens/print15.png" alt="Imagem 15">
-                    <img src="src/imagens/print16.png" alt="Imagem 16">
-                    <img src="src/imagens/print17.jpg" alt="Imagem 17">
-                </div>
-                <button class="carousel-button next">&#10095;</button>
+            <div class="card-body">
+              <h3>Armadura Espiritual Eterna</h3>
+              <p>
+                Informações detalhadas sobre a Armadura Espiritual Eterna e o
+                Item Único.
+              </p>
+              <a href="tutorial2.html" class="btn-tutorial">Ver Tutorial</a>
             </div>
-        </section>
+          </article>
+
+          <article class="tutorial-card">
+            <div class="thumb">
+              <img
+                src="src/imagens/tutobddrop.png"
+                alt="Armadura do Terremoto do Dragão Negro"
+              />
+            </div>
+            <div class="card-body">
+              <h3>Armadura do Dragão Negro</h3>
+              <p>
+                Informações detalhadas sobre a Armadura do Terremoto do Dragão
+                Negro.
+              </p>
+              <a href="tutorial3.html" class="btn-tutorial">Ver Tutorial</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- DOWNLOAD -->
+      <section id="download">
+        <h2>Download do Jogo</h2>
+        <p>Baixe o cliente do jogo e entre para a comunidade Hero Millenium:</p>
+        <div class="download-actions">
+          <a
+            href="https://drive.google.com/file/d/1znajvTEF8Bzk3HzSj34XTwC2bK9OySTX/view?usp=sharing"
+            class="btn-download"
+            target="_blank"
+            rel="noopener"
+            >⬇ Baixar Jogo</a
+          >
+          <a
+            href="https://discord.gg/fgwACvX3Pt"
+            target="_blank"
+            rel="noopener"
+            class="btn-discord"
+            >Discord</a
+          >
+        </div>
+      </section>
+
+      <!-- GALERIA -->
+      <section id="carrossel">
+        <h2>Galeria de Imagens</h2>
+        <div
+          class="carousel"
+          role="region"
+          aria-label="Galeria de imagens do jogo"
+        >
+          <button class="carousel-button prev" aria-label="Imagem anterior">
+            &#10094;
+          </button>
+          <div class="carousel-inner">
+            <img src="src/imagens/print1.png" alt="Screenshot 1" />
+            <img src="src/imagens/print2.png" alt="Screenshot 2" />
+            <img src="src/imagens/print3.jpg" alt="Screenshot 3" />
+            <img src="src/imagens/print4.jpg" alt="Screenshot 4" />
+            <img src="src/imagens/print5.jpg" alt="Screenshot 5" />
+            <img src="src/imagens/print6.jpg" alt="Screenshot 6" />
+            <img src="src/imagens/print7.jpg" alt="Screenshot 7" />
+            <img src="src/imagens/print8.jpg" alt="Screenshot 8" />
+            <img src="src/imagens/print9.jpg" alt="Screenshot 9" />
+            <img src="src/imagens/print10.png" alt="Screenshot 10" />
+            <img src="src/imagens/print11.png" alt="Screenshot 11" />
+            <img src="src/imagens/print12.png" alt="Screenshot 12" />
+            <img src="src/imagens/print13.png" alt="Screenshot 13" />
+            <img src="src/imagens/print14.jpg" alt="Screenshot 14" />
+            <img src="src/imagens/print15.png" alt="Screenshot 15" />
+            <img src="src/imagens/print16.png" alt="Screenshot 16" />
+            <img src="src/imagens/print17.jpg" alt="Screenshot 17" />
+          </div>
+          <button class="carousel-button next" aria-label="Próxima imagem">
+            &#10095;
+          </button>
+        </div>
+      </section>
     </main>
 
-
-    <script src="src/js/index.js"></script>
-
     <footer>
-        <p>&copy; 2024 Hero Millenium. Todos os direitos reservados.</p>
+      <p>&copy; 2024 Hero Millenium &mdash; Todos os direitos reservados.</p>
     </footer>
 
-</body>
-
+    <script src="src/js/index.js"></script>
+  </body>
 </html>
