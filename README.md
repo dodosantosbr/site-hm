@@ -7,6 +7,7 @@
 </p>
 
 ## 💻 Projeto
+<img width="1304" height="665" alt="image" src="https://github.com/user-attachments/assets/127944fa-b9cc-4e07-b75b-3708c26bcfcb" />
 
 Este projeto é uma landing page de um servidor de jogo online Hero **Hero Millenium**.
 
