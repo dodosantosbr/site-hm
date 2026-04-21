@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   /* ============================================================
      EFEITO LETRAS JAPONESAS
      ============================================================ */
-  const letras = "英雄千年最強";
+  const letras = "英雄千禧年最好的";
 
   const cores = [
     "#ff4fd8",
